@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <h1>Cloud Services Guide</h1>
-    
+
+    <!-- Контейнер для карточек, чтобы выровнять по центру -->
     <div class="container">
         <div class="card">
+            <h2>AWS</h2>
             <img src="aws.png" alt="AWS Logo">
-            <h3>AWS</h3>
-            <p>Click below to learn more!</p>
-            <button class="learn-more">Learn More</button>
-            <a href="aws.html" class="more-details">Подробнее</a>
+            <p id="aws-text">Click below to learn more!</p>
+            <button onclick="showInfo('aws')">Learn More</button>
         </div>
 
         <div class="card">
+            <h2>Azure</h2>
             <img src="azure.png" alt="Azure Logo">
-            <h3>Azure</h3>
-            <p>Click below to learn more!</p>
-            <button class="learn-more">Learn More</button>
-            <div class="description">Microsoft Azure предлагает мощные облачные решения...</div>
-            <a href="azure.html" class="more-details">Подробнее</a>
+            <p id="azure-text">Click below to learn more!</p>
+            <button onclick="showInfo('azure')">Learn More</button>
         </div>
 
         <div class="card">
+            <h2>Google Cloud (GCP)</h2>
             <img src="gcp.png" alt="GCP Logo">
-            <h3>Google Cloud</h3>
-            <p>Click below to learn more!</p>
-            <button class="learn-more">Learn More</button>
-            <div class="description">Google Cloud Platform (GCP) - платформа от Google...</div>
-            <a href="gcp.html" class="more-details">Подробнее</a>
+            <p id="gcp-text">Click below to learn more!</p>
+            <button onclick="showInfo('gcp')">Learn More</button>
         </div>
     </div>
 
-    <button id="theme-toggle">🌙 Toggle Dark Mode</button>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- К
